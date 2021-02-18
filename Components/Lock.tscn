@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Art/LightWall.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 45.2557, 2.34275 )
+
+[node name="Lock" type="StaticBody2D"]
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Light2D" type="Light2D" parent="."]
+scale = Vector2( 4, 0.5 )
+texture = ExtResource( 1 )
+texture_scale = 0.01
+color = Color( 1, 1, 0, 1 )
+energy = 1.5
+shadow_enabled = true
+
+[node name="Light2D2" type="Light2D" parent="."]
+texture = ExtResource( 1 )
+texture_scale = 0.5
+color = Color( 0.8, 0.8, 0, 1 )
+energy = 0.5
+shadow_enabled = true
