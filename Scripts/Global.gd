@@ -13,8 +13,11 @@ var levels = [
 	"res://Scenes/SplitUp.tscn",
 	"res://Scenes/KeyIntro.tscn",
 	"res://Scenes/Spiral.tscn",
+	"res://Scenes/HelpMeOut.tscn",
 	"res://Scenes/Seporation.tscn",
-	"res://Scenes/SpaceShipt.tscn"
+	"res://Scenes/SpaceShip.tscn",
+	"res://Scenes/Thanks.tscn",
+	"res://Scenes/Secret.tscn"
 ]
 
 
