@@ -28,6 +28,8 @@ var keyColor = Color(0.9, 0.9, 0)
 var normalColor1 = Color(1, 1, 1)
 var normalColor2 = Color(0.8, 0.8, 0.8)
 
+signal gameOver
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	light1 = get_node(light1_path)
@@ -58,9 +60,8 @@ func _process(delta):
 			lightValue = 1.0
 		
 	if lightValue <= 0.3:
-		Global.gameOver()
-		pass
-#		Kill the player
+		emit_signal("gameOver")
+		self.queue_free()
 	
 func _physics_process(delta):
 	if dead:

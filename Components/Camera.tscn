@@ -29,6 +29,7 @@ __meta__ = {
 }
 
 [node name="LeftWall" type="StaticBody2D" parent="."]
+visible = false
 position = Vector2( -520, 0 )
 collision_layer = 2
 collision_mask = 0
@@ -37,12 +38,14 @@ __meta__ = {
 }
 
 [node name="WallOfDeath" type="CollisionShape2D" parent="LeftWall"]
+visible = false
 shape = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="TopWall" type="StaticBody2D" parent="."]
+visible = false
 position = Vector2( 0, -305 )
 collision_layer = 2
 collision_mask = 0
@@ -51,12 +54,14 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TopWall"]
+visible = false
 shape = SubResource( 2 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="BottomWall" type="StaticBody2D" parent="."]
+visible = false
 position = Vector2( 0, 305 )
 collision_layer = 2
 collision_mask = 0
@@ -65,12 +70,14 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BottomWall"]
+visible = false
 shape = SubResource( 2 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="RightWall" type="StaticBody2D" parent="."]
+visible = false
 position = Vector2( 520, 0 )
 collision_layer = 2
 collision_mask = 0
@@ -79,6 +86,7 @@ __meta__ = {
 }
 
 [node name="WallOfDeath" type="CollisionShape2D" parent="RightWall"]
+visible = false
 shape = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true

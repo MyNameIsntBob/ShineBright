@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Brackeys Game jam 2021.1"
-run/main_scene="res://Scenes/Tutorial.tscn"
+run/main_scene="res://Scenes/SplashArt.tscn"
 config/icon="res://Art/icon.png"
 
 [autoload]

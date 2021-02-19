@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/EmptyPlayer.gd" type="Script" id=1]
+[ext_resource path="res://Art/LightSource.png" type="Texture" id=3]
+[ext_resource path="res://Art/LightSourceLarge.png" type="Texture" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[node name="Player1" type="KinematicBody2D"]
+z_index = 1
+collision_mask = 15
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 0.140312, 0 )
+texture = ExtResource( 3 )
+texture_scale = 0.25
+energy = 1.5
+range_height = -5.0
+shadow_enabled = true
+
+[node name="Light2D2" type="Light2D" parent="."]
+position = Vector2( -4.75684, -1.18921 )
+texture = ExtResource( 4 )
+energy = 0.75
+shadow_enabled = true

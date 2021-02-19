@@ -1,12 +1,14 @@
 extends Sprite
 
+signal nextLevel
+
+var finished := false
 var ready := 0
 
 func _process(delta):
-	if ready >= 2:
-		Global.nextLevel()
-		
-		self.queue_free()
+	if ready >= 2 and !finished:
+		emit_signal("nextLevel")
+		finished = true
 
 
 func _on_Area2D_body_entered(body):
