@@ -18,4 +18,4 @@ func _ready():
 
 func _on_TextureButton_pressed():
 	print("Opening YouTube")
-	OS.shell_open("https://www.youtube.com/channel/UCq7NNPOc2dL19v83agyVFsA")
+	OS.shell_open("https://youtu.be/Rea75dSy8Fs")

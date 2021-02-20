@@ -8,7 +8,7 @@
 [ext_resource path="res://Components/Finish.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Components/Fade.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Art/580b57fcd9996e24bc43c545.png" type="Texture" id=8]
-[ext_resource path="res://Scenes/TextureButton.gd" type="Script" id=9]
+[ext_resource path="res://Scripts/TextureButton.gd" type="Script" id=9]
 
 [node name="Node2D" type="Node2D"]
 

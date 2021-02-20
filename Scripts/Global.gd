@@ -19,7 +19,7 @@ var levels = [
 	"res://Scenes/SoCloseYetSoFar.tscn",
 	"res://Scenes/BackTogether.tscn",
 	"res://Scenes/Thanks.tscn",
-	"res://Scenes/Secret.tscn"
+	"res://Scenes/BackGroundImage.tscn"
 ]
 
 func loadLevel():
