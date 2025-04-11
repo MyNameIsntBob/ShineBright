@@ -106,5 +106,6 @@ light1_path = NodePath("../Player1/Light2D")
 light2_path = NodePath("../Player1/Light2D2")
 
 [node name="SceneTransition" parent="." instance=ExtResource( 9 )]
+
 [connection signal="gameOver" from="Player8" to="SceneTransition" method="_on_Player8_gameOver"]
 [connection signal="gameOver" from="Player1" to="SceneTransition" method="_on_Player1_gameOver"]
