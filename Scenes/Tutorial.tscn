@@ -71,5 +71,6 @@ __meta__ = {
 }
 
 [node name="SceneTransition" parent="." instance=ExtResource( 5 )]
+
 [connection signal="gameOver" from="Player1" to="SceneTransition" method="_on_Player1_gameOver"]
 [connection signal="nextLevel" from="Finish" to="SceneTransition" method="_on_Finish_nextLevel"]
